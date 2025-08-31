@@ -1,0 +1,37 @@
+:root{
+  --bg1:#74ebd5;
+  --bg2:#acb6e5;
+  --dark:#1f2937;
+  --card:#fff;
+}
+*{box-sizing:border-box}
+body{
+  font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+  margin:0; min-height:100vh;
+  background:linear-gradient(120deg,var(--bg1),var(--bg2));
+  display:flex; flex-direction:column;
+}
+header,footer{
+  background:var(--dark); color:#fff; text-align:center; padding:14px;
+}
+main{flex:1; display:grid; place-items:center; padding:24px}
+.container{
+  width:100%; max-width:560px; background:var(--card); padding:20px; border-radius:12px;
+  box-shadow:0 10px 30px rgba(0,0,0,.12);
+}
+label{display:block; margin-bottom:8px; font-weight:700}
+input{
+  width:100%; padding:12px; font-size:18px; border-radius:10px; border:1px solid #d1d5db;
+  text-align:center;
+}
+.buttons{display:flex; gap:8px; margin-top:10px}
+button{
+  flex:1; padding:12px; font-weight:700; border-radius:10px; border:0; cursor:pointer;
+  background:var(--dark); color:#fff;
+}
+button.sec{background:#e5e7eb; color:var(--dark)}
+#resultado{margin-top:16px; text-align:left}
+.premios{list-style:none; padding:0; margin:8px 0 0 0; display:grid; gap:8px}
+.premios li{padding:10px; border-radius:8px; background:#f8fafc; border:1px solid #e6eef6; display:flex; justify-content:space-between; align-items:center}
+.passo{font-size:13px; color:#374151}
+.nota{display:block; margin-top:10px; color:#6b7280}
