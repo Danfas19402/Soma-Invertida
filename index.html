@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SOMA INVERTIDA</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>🔄 SOMA INVERTIDA</h1>
+  </header>
+
+  <main>
+    <div class="container">
+      <label for="numero">Digite um número de 4 dígitos:</label>
+      <input id="numero" inputmode="numeric" pattern="\d*" type="text" maxlength="4" placeholder="Ex: 9727" />
+      <div class="buttons">
+        <button id="btnCalcular">Calcular</button>
+        <button id="btnLimpar" class="sec">Limpar</button>
+      </div>
+
+      <div id="resultado" aria-live="polite"></div>
+      <small class="nota">Cada prêmio é mostrado como milhar (4 dígitos). As somas usam apenas o último dígito quando necessário.</small>
+    </div>
+  </main>
+
+  <footer>
+    <p>Projeto Soma Invertida © 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
